@@ -12,9 +12,7 @@
             background-image: url('background.jpg');
             background-size: cover;
             background-position: center;
-           
             filter: blur(1px);
-            
             color: white;
         }
 
@@ -32,17 +30,42 @@
             font-size: 18px;
             line-height: 1.6;
         }
+
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
-    <a href="dealers.html">
-        <button>see more</button>
-    </a>
+    <div class="container">
+        <h1>Welcome to Jeffrey Toys shop</h1>
+        <p>This is an Exclusive opportunity for your happy kids!</p>
+        
+        <button onclick="openFullscreen()">See More</button>
+    </div>
 
-<div class="container">
-    <h1>Welcome to jeffrey Toys shop</h1>
-    <p>This is an Exclusive opportunity for your happy kids!</p>
-</div>
-
+    <script>
+        function openFullscreen() {
+            var elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { 
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { 
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
 </body>
 </html>
