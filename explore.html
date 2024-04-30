@@ -31,7 +31,6 @@
             line-height: 1.6;
         }
 
-        
         button {
             background-color: #4CAF50;
             color: white;
@@ -41,7 +40,6 @@
             border-radius: 5px;
         }
 
-        
         button:hover {
             background-color: #45a049;
         }
@@ -51,21 +49,9 @@
     <div class="container">
         <h1>Welcome to Jeffrey Toys shop</h1>
         <p>This is an Exclusive opportunity for your happy kids!</p>
-        
-        <button onclick="openFullscreen()">See More</button>
+        <a href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=toys%20for%20kids&eq=toys&etslf=10552"
+         target="_blank">
+            <button>See More</button></a>
     </div>
-
-    <script>
-        function openFullscreen() {
-            var elem = document.documentElement;
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen();
-            } else if (elem.webkitRequestFullscreen) { 
-                elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) { 
-                elem.msRequestFullscreen();
-            }
-        }
-    </script>
 </body>
 </html>
