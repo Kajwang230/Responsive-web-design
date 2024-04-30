@@ -1,34 +1,33 @@
-/* styles.css */
 
-/* Set background color for the entire frameset */
+
+
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #d9cfdf; /* Example color */
+    background-color: #d9cfdf; 
 }
 
-/* Style each individual frame */
+
 frame {
-    border: 1px solid #13b9c5; /* Add a border around each frame */
-    box-sizing: border-box; /* Ensure the border is included in the frame dimensions */
-    width: 100%; /* Make frames fill the entire width of the frameset */
-    height: 100%; /* Make frames fill the entire height of the frameset */
+    border: 1px solid #13b9c5; 
+    box-sizing: border-box; 
+    width: 100%;
+    height: 100%; 
 }
 
-/* Style the content inside each frame */
+
 frame > html, frame > body {
-    margin: 0; /* Remove any default margin */
-    padding: 10px; /* Add padding to the content inside the frames */
-    width: 100%; /* Make content fill the entire width of the frames */
-    height: 100%; /* Make content fill the entire height of the frames */
+    margin: 0; 
+    padding: 10px; 
+    width: 100%; 
+    height: 100%; 
 }
 
-/* If you want to style tables inside the frames, you can add additional CSS rules */
-/* For example, to make tables fill their frames */
+
 frame > html table,
 frame > body table {
     width: 100%;
     height: 100%;
 }
 
-/* Adjust other table styles as needed */
+
